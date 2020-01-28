@@ -1,0 +1,19 @@
+language: c
+sudo: false
+dist: bionic
+compiler:
+  - gcc
+  - clang
+
+env:
+  - CONF="MALLOC=jemalloc"
+  - CONF="MALLOC=memkind"
+
+addons:
+  apt:
+    packages:
+        - tcl8.5
+
+script:
+  - make ${CONF}
+  - make test
