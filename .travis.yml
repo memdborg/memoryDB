@@ -15,5 +15,8 @@ addons:
         - tcl8.5
 
 script:
-  - make ${CONF}
+  - make gcov ${CONF}
   - make test
+  
+after_success:
+  - bash <(curl -s https://codecov.io/bash) -p src
