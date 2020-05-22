@@ -13,4 +13,3 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         teams: "Reviewers"
         include-draft: false
-        skip-with-manual-reviewers: 1
