@@ -11,6 +11,6 @@ jobs:
       uses: rowi1de/auto-assign-review-teams@v1.0.0
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        teams: "Reviewers"
+        teams: "@Reviewers"
         include-draft: false
         skip-with-manual-reviewers: 1
