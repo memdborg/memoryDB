@@ -12,5 +12,6 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         teams: "Reviewers"
+        persons: kasiawasiuta
         include-draft: false
         skip-with-manual-reviewers: 1
