@@ -11,5 +11,5 @@ jobs:
       uses: rowi1de/auto-assign-review-teams@v1.0.0
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        teams: "Reviewers"
+        teams: "memdborg/reviewers"
         include-draft: false
