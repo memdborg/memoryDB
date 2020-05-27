@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: "Assign Team and Persons"
-      uses: rowi1de/auto-assign-review-teams@v1.0.0
+      uses: rowi1de/auto-assign-review-teams@v0.0.6
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        teams: "Reviewers"
-        include-draft: false
+        teams: "memdborg/reviewers"
+        include-draft: true
