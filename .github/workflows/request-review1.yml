@@ -12,4 +12,4 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         teams: "Reviewers"
-        include-draft: false
+        include-draft: true
